@@ -17,14 +17,15 @@ To release a new update, you must first build, pack, and releasify your updated 
    	**`Properties\AssemblyInfo.cs`**
    
    	~~~cs
-  	[assembly: AssemblyVersion("1.0.1")]	[assembly: AssemblyFileVersion("1.0.1")]
+  	[assembly: AssemblyVersion("1.0.1")]
+	[assembly: AssemblyFileVersion("1.0.1")]
    	~~~
 2. **Switch to Release** - switch your build configuration to `Release`.
 3. **Build MyApp** - build your application to ensure the latest changes are included in the package we will be creating.
 
 ### Packing
 
-Using [NuGet Package Explorer](https://npe.codeplex.com/) complete the following:
+Using [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) complete the following:
 
 1. **Open Previous NuGet Package** - open the previous NuGet package you created for MyApp version 1.0.0.
 2. **Update Version** - update the version in the metadata.
